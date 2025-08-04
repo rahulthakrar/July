@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:form_app/form_p.dart';
+import 'package:my_app/form.dart';
 
 void main() {
-  runApp(MaterialApp(home: homeScreen(), debugShowCheckedModeBanner: false));
+  runApp(MyApp());
 }
 
-// ignore: camel_case_types
-class homeScreen extends StatelessWidget {
-  const homeScreen({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-      appBar: AppBar(
-        title: Center(child: Text('Form Validator')),
-        toolbarHeight: 50,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
+          toolbarHeight: 40,
+          title: Text('Registration'),
+          centerTitle: true,
+        ),
+        body: formScreen(),
       ),
-      body: Column(children: [FormP()]),
     );
   }
 }
