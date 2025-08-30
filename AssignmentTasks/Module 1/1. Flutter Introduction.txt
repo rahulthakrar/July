@@ -1,0 +1,26 @@
+1. Flutter Introduction
+
+Que 1 :
+	Explain the benefits of using Flutter over other cross-platform frameworks.
+Answer :
+	Flutter delivers native-like performance with its own rendering engine, while its single codebase and hot reload accelerate development across platforms.
+
+Que 2 :
+	Describe the role of Dart in Flutter. What are its advantages for mobile development?
+	
+Answer :
+	Dart is Flutter's native language, enabling features like hot reload for rapid development and ahead-of-time compilation for fast, native performance.
+
+Que 3 :
+	Outline the steps to set up a Flutter development environment.
+Answer :
+	1. Download Flutter SDK & extract it.
+2. Add Flutter to your system path.
+3. Run `flutter doctor` to install needed dependencies (Android Studio, Xcode, etc.).
+4. Configure an editor (VS Code/Android Studio) with the Flutter & Dart plugins.
+
+Que 4 :
+	Describe the basic Flutter app structure, explaining main.dart, the main function, and the
+ widget tree.
+Answer :
+	The `main.dart` file contains the `main()` function, which is the entry point. It runs the `runApp()` function with a root widget (like `MaterialApp`), which builds the entire widget tree.
